@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 973px;
+    display: flex;
+    font-family: "Arial", sans-serif;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 952px;
+    margin: 20px auto;
+    border: solid 2px #000;
+    min-width: 768px;
+    overflow: hidden;
+    transition: background-color 1s;
+}
+
+.main--image1 {
+    position: absolute;
+    top: 92px;;
+    transform: translate(-20px);
+}
+
+.main--image2 {
+    position: absolute;
+    top: 1401px;
+    transform: translate(-20px);
+}
+
+.switch {
+    display: none;
+}
+
+#maxim:checked ~ .container {
+    background-color: #ffe05d;
+}
+
+#alexey:checked ~ .container {
+    background-color: #ff8283;
+}
+
+#georgiy:checked ~ .container {
+    background-color: #72c4f6;
+}
+
+.dash {
+    position: absolute;
+    font-size: 44px;
+    top: 276px;
+    transform: translate(103px);
+}
+
+.main-header__logo {
+    display: block;
+    text-align: center;
+    margin-top: -2px;
+}
+
+.intro__title {
+    min-width: 800px;
+    margin: 273px auto 0;
+    padding-bottom: 85px;
+    padding-left: 79px;
+    padding-right: 101px;
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 48px;
+    text-align: center;
+    text-indent: 42px;
+    border-bottom: 2px solid #000;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 2px solid #000;
+}
+
+.intro__block {
+    display: flex;
+    width: 973px;
+    margin-top: 79px;
+    transform: translate(-8px);
+    margin-bottom: 39px;
+    border-bottom: 2px solid #000;
+}
+
+.intro__text {
+    width: 455px;
+    margin: -2px 97px 49px;
+}
+
+.intro__video__paragraph {
+    margin: 0;
+}
+
+.paragraph {
+    min-width: 458px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 26px;
+}
+
+.promo__video__link {
+    display: block;
+    width: 113px;
+    margin-bottom: 11px;
+}
+
+.people {
+    display: flex;
+    min-width: 608px;
+    margin-left: 172px;
+    justify-content: space-between;
+    margin-right: 172px;
+    font-weight: bold;
+}
+
+.people--top {
+    padding-top: 42px;
+    padding-bottom: 180px;
+}
+
+.people__person {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 138px;
+    height: 170px;
+    background: url(images/people.png) no-repeat 0 0;
+    cursor: pointer;
+}
+
+.people__person:nth-of-type(2) {
+    background-position: -235px 0;
+}
+
+.people__person:nth-of-type(3) {
+    background-position: -469px 0;
+}
+
+.people--top .people__person::after {
+    position: absolute;
+    left: -75px;
+    top: 197px;
+    width: 295px;
+    height: 75px;
+    overflow: hidden;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    hyphens: auto;
+    cursor: auto;
+}
+
+.people--top .people__person:nth-of-type(2)::after {
+    left: -72px;
+    width: 280px;
+}
+
+.people--top .people__person:nth-of-type(3)::after {
+    left: -80px;
+    width: 300px;
+}
+
+#maxim:checked ~ .container .people--top .people__person:nth-of-type(1)::before {
+    content: "";
+}
+
+#alexey:checked ~ .container .people--top .people__person:nth-of-type(2)::before {
+    content: "";
+}
+
+#georgiy:checked ~ .container .people--top .people__person:nth-of-type(3)::before {
+    content: "";
+}
+
+
+.people--top .people__person::before {
+    position: absolute;
+    left: -9px;
+    top: -9px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+#maxim:checked ~ .container .people--top .people__person:nth-of-type(1)::after {
+    content: "Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.";
+    position: absolute;
+}
+
+#alexey:checked ~ .container .people--top .people__person:nth-of-type(2)::after {
+    content: "В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье.";
+}
+
+#georgiy:checked ~ .container .people--top .people__person:nth-of-type(3)::after {
+    content: "Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания.";
+}
+
+.description__1 {
+    margin-top: 51px;
+    margin-left: 98px;
+}
+
+.description__2 {
+    margin-top: 600px;
+    margin-left: 573px;
+}
+
+.description__3 {
+    margin-top: 593px;
+    margin-bottom: 677px;
+    margin-left: 78px;
+}
+
+.description__paragraph {
+    width: 297px;
+    text-align: center;
+    margin: 0;
+    padding-top: 27px;
+}
+
+.people--bottom {
+    margin-bottom: 73px;
+}
+
+#maxim:checked ~ .container .people--bottom .people__person:nth-of-type(1)::before {
+    content: "";
+}
+
+#alexey:checked ~ .container .people--bottom .people__person:nth-of-type(2)::before {
+    content: "";
+}
+
+#georgiy:checked ~ .container .people--bottom .people__person:nth-of-type(3)::before {
+    content: "";
+}
+
+
+.people--bottom .people__person::before {
+    position: absolute;
+    left: -9px;
+    top: -9px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+
+.footer {
+    margin: 78px 399px 32px 95px;
+}
+
+.footer__text {
+    min-width: 458px;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.atom--image {
+    position: absolute;
+    top: 4264px;
+    transform: translate(560px);
+}
+
+.footer__social {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.footer__social__link {
+    margin-right: 9px;
+    margin-bottom: 90px;
+    width: 24px;
+    height: 24px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAYCAMAAAAie4Q/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBQTFRF9PT0////4+Pj7OzszMzM+vr629vbw8PD09PTvb29tLm8/Pz8urq6uLi4ubm5t7e3Mn4MmAAAAbBJREFUeNrMluF2wyAIhQFBZTH2/d92GtvVqDk1a7eWP200wucFibB+jn1lg/Wz7IOAomrsgYK3RPYtPIAIsQXSNIpoTrhx7kVAmiNrC0TYAkEx0vo1F65/OG+L+bGk2W39OwuUBTK7lOHVlloJMoXILdscsD4PFEGkT5kgSudJQBrZDIK7C4pINayeBlI9PGUpMnSeqBu3eZRjAutSvKL4eAqopH0I5G1KgVjrOyDYR3VZMhQjvUAr/ri/DDLfACV0LoNpSeiAAPsd50dPbQ1BHQBtqwUaN1CoA5JUxLegicPlqSEQDTztVLA7HuRB6KaUxkCyURRL7y8tEOWaWIzxI09QRQimDiBhFFrc80DHRe0bjVxNRCMtDD8u6ocpOwbKy+qJawMqUgySA37mlAn6uqj9GaB2gmFcQduCxYZ1Dgji/dgHmAUCImnP0hpodMS2BaPWeABUVpfGSDgL1PUCZaZrCxJuQxs33am3bcZ6g/NAsBOCzW1UJ7/lh0Cp3JIP9YCTQEeXBfaen715yO3Dvdw7wm+BXmIGG4M3A03cqVVV/zX+5WWX/MtfKfQtwAD71IyXFUavdwAAAABJRU5ErkJggg==') no-repeat 0 0;
+}
+
+.footer__social__link:nth-of-type(2) {
+    background-position: -24px 0;
+}
+
+.footer__social__link:nth-of-type(3) {
+    background-position: -48px 0;
+}
+
+.footer__social__link:nth-of-type(4) {
+    background-position: -72px 0;
+}
+
+.footer__social__link:nth-of-type(5) {
+    background-position: -96px 0;
+}
+
+.footer__social__link:nth-of-type(6) {
+    background-position: -120px 0;
+}
+
+.footer__transparent {
+    display: flex;
+    flex-direction: row;
+    min-width: 458px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+
+.feedback {
+    margin-left: 17px;
+}
+
+.help a, .feedback a {
+    color: #000;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-left: 78px;
+}
